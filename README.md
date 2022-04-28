@@ -8,3 +8,6 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
 ## Stuff changed
 
 - `body-parser` deprecated. Included in express>=4.16.0
+- Fix `package.json`
+    - Fix main file
+    - Create start script
