@@ -16,3 +16,4 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
 - Enable environmental variables support with `dotenv`
 - Add `mongose` configuration
 - Add todo item model
+- Separate routes and controllers 
