@@ -1,25 +1,46 @@
 
 function indexController(req, res) {
-    return res.json({ data: todoItems, status: "success" })
+    try {
+        tasks = TasksService().getAllTasks(req.params.id)
+    }
+    catch(err){
+        // Manage errors and return proper response
+    }
+    
+    return res.status(200).send(tasks)
 }
 
 function addItemController(req, res) {
-    todoItems.push({
-        index: index++,
-        value: req.body.value,
-        done: false,
-    })
-    return res.json({ data: todoItems, status: 'success' })
+    try {
+        TasksService().addTask(req.body)
+    }
+    catch(err){
+        // Manage errors and return proper response
+    }
+    
+    return res.status(200).send({...})
 }
 
 function deteleItemController(req, res) {
-    var todoItems = todoItems.filter(d => d.index != +req.params.id)
-    return res.json({ data: todoItems, status: 'success' })
+    try {
+        TasksService().deleteTask(req.params.id)
+    }
+    catch(err){
+        // Manage errors and return proper response
+    }
+    
+    return res.status(200).send({...})
 }
 
 function updateController(req, res) {
-    todoItems.filter(d => d.index == +req.params.id)[0].done = req.body.done
-    return res.json({ data: todoItems, status: 'success' })
+    try {
+        TasksService().updateTask(req.params.id, req.body)
+    }
+    catch(err){
+        // Manage errors and return proper response
+    }
+    
+    return res.status(200).send({...})
 }
 
 export { 

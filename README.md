@@ -17,3 +17,5 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
 - Add `mongose` configuration
 - Add todo item model
 - Separate routes and controllers 
+- Create tasks service
+
