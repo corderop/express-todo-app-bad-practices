@@ -12,3 +12,4 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
     - Fix main file
     - Create start script
 - Use ES6 imports
+- Enable hotreloading with `nodemon`
