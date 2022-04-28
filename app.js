@@ -1,6 +1,6 @@
 // === imports == //
 import express from 'express'
-
+import * as env from './config/env.js'
 
 // === initialisation == //
 app = express()
@@ -48,4 +48,4 @@ app.patch('/task/:id', (req, res) => {
 })
 
 // === run app == //
-app.listen(8000, () => console.log(`Example app running!`))
+app.listen(env.PORT, () => console.log(`Example app running! at port ${env.PORT}`))

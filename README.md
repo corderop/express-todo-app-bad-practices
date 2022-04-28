@@ -13,3 +13,4 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
     - Create start script
 - Use ES6 imports
 - Enable hotreloading with `nodemon`
+- Enable environmental variables support with `dotenv`
