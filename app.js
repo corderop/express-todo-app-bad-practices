@@ -1,12 +1,11 @@
 // === imports == //
 express = require('express')
-bodyParser = require('body-parser')
 
 
 // === initialisation == //
 app = express()
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 
 // === store == //
