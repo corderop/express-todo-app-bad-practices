@@ -1,5 +1,5 @@
 // === imports == //
-express = require('express')
+import express from 'express'
 
 
 // === initialisation == //

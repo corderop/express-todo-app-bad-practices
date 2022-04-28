@@ -11,3 +11,4 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
 - Fix `package.json`
     - Fix main file
     - Create start script
+- Use ES6 imports
