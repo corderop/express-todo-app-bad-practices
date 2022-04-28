@@ -18,4 +18,8 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
 - Add todo item model
 - Separate routes and controllers 
 - Create tasks service
+- Format stuff
+    - Remove unnecessary comments
+    - Standardize all code format
+
 

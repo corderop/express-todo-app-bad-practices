@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import methods from "./methods";
+import mongoose from "mongoose"
+import methods from "./methods"
 
 const TodoItemSchema = new mongoose.Schema({
     value: { 
@@ -15,8 +15,8 @@ const TodoItemSchema = new mongoose.Schema({
         type: Date, 
         default: Date.now 
     }
-});
+})
 
 TodoItemSchema.methods = methods
 
-mongoose.model('TodoItem', ArticleSchema);
+mongoose.model("TodoItem", ArticleSchema)
