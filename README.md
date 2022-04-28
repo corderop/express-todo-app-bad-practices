@@ -15,3 +15,4 @@ Feel free to modify/add/delete files, folders, packages, endpoints, functions, c
 - Enable hotreloading with `nodemon`
 - Enable environmental variables support with `dotenv`
 - Add `mongose` configuration
+- Add todo item model
