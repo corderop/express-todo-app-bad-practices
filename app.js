@@ -1,5 +1,6 @@
 // === imports == //
 import express from 'express'
+import mongoose from 'mongoose'
 import * as env from './config/env.js'
 
 // === initialisation == //
@@ -7,6 +8,7 @@ app = express()
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+await mongoose.connect(env.MONGODB_URI)
 
 // === store == //
 var todoItems = [];
